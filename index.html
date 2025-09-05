@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pineapple Ops – WhatsApp Teambot</title>
+  <meta name="description" content="Interner WhatsApp-Bot für Login, OTP, Pausen & Frühschicht-Tracking." />
+  <style>
+    :root{--bg:#0f172a;--fg:#e2e8f0;--accent:#22d3ee;--muted:#94a3b8;}
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;background:linear-gradient(180deg,#0b1223,#0f172a 40%);color:var(--fg);}
+    header{padding:48px 20px;text-align:center;border-bottom:1px solid #1f2a48;}
+    h1{font-size:clamp(28px,4vw,44px);margin:8px 0;}
+    p.lead{color:var(--muted);max-width:780px;margin:10px auto 0;font-size:18px;line-height:1.6}
+    .pill{display:inline-block;margin-top:8px;padding:6px 12px;border:1px solid #1f2a48;border-radius:999px;color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 20px;}
+    .card{background:#0b1223;border:1px solid #1f2a48;border-radius:16px;padding:22px;margin:14px 0;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+    h2{font-size:24px;margin:0 0 12px}
+    ul{margin:0;padding-left:18px;line-height:1.7}
+    code{background:#0a0f1f;border:1px solid #1f223f;color:#cbd5e1;padding:2px 6px;border-radius:6px}
+    a.btn{display:inline-block;margin-top:10px;background:var(--accent);color:#03121a;font-weight:700;padding:10px 16px;border-radius:10px;text-decoration:none}
+    footer{color:#93a4c4;text-align:center;padding:28px 16px;border-top:1px solid #1f2a48;font-size:14px}
+    .muted{color:#94a3b8}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="pill">Business</div>
+    <h1>Pineapple Ops – WhatsApp Teambot</h1>
+    <p class="lead">Interner WhatsApp-Bot für Login mit OTP, Checkin/Checkout, Pausen &amp; Frühschicht-Nachrichten (0,80 € pro Nachricht). Sicher, nachvollziehbar und per Google Sheets steuerbar.</p>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Was ist das?</h2>
+      <p>Wir nutzen WhatsApp Business (Cloud API) und Google Sheets, um interne Abläufe zu automatisieren: Logins mit Einmalcodes (OTP), Pausen, Verfügbarkeiten, Open Shifts, Umsatz &amp; Benachrichtigungen.</p>
+    </section>
+
+    <section class="card">
+      <h2>Kontakt</h2>
+      <ul>
+        <li>E‑Mail: <a href="mailto:ops@example.com">ops@example.com</a></li>
+        <li>WhatsApp Business: per Freigabe</li>
+        <li>Standort: Remote</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Rechtliches</h2>
+      <ul>
+        <li>Impressum/Anbieter: Pineapple Ops</li>
+        <li>Datenschutz: Wir verarbeiten ausschließlich arbeitsrelevante Metadaten (Login, Zeiten, Nachrichtenanzahl). Keine Weitergabe an Dritte.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Webhook (optional)</h2>
+      <p>Wenn ein eigener Webhook genutzt wird, lautet der Endpunkt typischerweise <code>/webhook</code> (POST) gemäß Meta Dokumentation.</p>
+      <a class="btn" href="#" onclick="alert('Dies ist eine statische Demo-Seite.');return false;">Mehr erfahren</a>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Pineapple Ops • <span class="muted">Interne Tools</span>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
